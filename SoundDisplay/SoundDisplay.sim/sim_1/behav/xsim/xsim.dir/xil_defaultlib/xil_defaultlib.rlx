@@ -1,0 +1,15 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,1649100839,verilog,,,,oled_buff_test,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/clock_20khz.v,1647488192,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/seg_driver.v,,clock_16bit;clock_20khz,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v,1570395502,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v,,Audio_Capture,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v,1648553476,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/clock_20khz.v,,Oled_Display,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/btn_debouncer.v,1649100737,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,,btn_debouncer,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_drawer.v,1648706905,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/text_drawer.v,,menu_drawer,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_framebuff.v,1648543426,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,,oled_framebuff,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/seg_driver.v,1648091448,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/test_draw.v,,seg_driver,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/test_draw.v,1648693963,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/text_drawer.v,,test_draw,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/text_drawer.v,1648699050,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,,text_drawer,,,,,,,,

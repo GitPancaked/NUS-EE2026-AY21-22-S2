@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SoundDisplay.srcs/sources_1/new/Audio_Capture.v" \
+"../../../../SoundDisplay.srcs/sources_1/new/Oled_Display.v" \
+"../../../../SoundDisplay.srcs/sources_1/imports/new/clock_20khz.v" \
+"../../../../SoundDisplay.srcs/sources_1/new/seg_driver.v" \
+"../../../../SoundDisplay.srcs/sources_1/new/test_draw.v" \
+"../../../../SoundDisplay.srcs/sources_1/new/text_drawer.v" \
+"../../../../SoundDisplay.srcs/sources_1/new/Top_Student.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

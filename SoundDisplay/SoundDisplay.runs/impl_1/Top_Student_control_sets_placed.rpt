@@ -1,0 +1,483 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Apr  5 15:24:44 2022
+| Host         : wx running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   414 |
+| Unused register locations in slices containing registers |  1596 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            6 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            2 |
+|     12 |          385 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              98 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             468 |           65 |
+| Yes          | No                    | No                     |            4734 |         1025 |
+| Yes          | No                    | Yes                    |               8 |            2 |
+| Yes          | Yes                   | No                     |               8 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+------------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|                 Clock Signal                |                           Enable Signal                          |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++---------------------------------------------+------------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  clk_6250khz/PRESCALER_CLOCK                |                                                                  |                                                  |                1 |              2 |
+|  wave_visualiser/clk_sample/PRESCALER_CLOCK |                                                                  |                                                  |                1 |              2 |
+| ~CLK6250khz_BUFG                            |                                                                  |                                                  |                1 |              2 |
+|  clk_40khz/PRESCALER_CLOCK                  |                                                                  |                                                  |                1 |              2 |
+|  clk_1khz/PRESCALER_CLOCK                   |                                                                  |                                                  |                1 |              2 |
+|  clk_200hz/PRESCALER_CLOCK                  |                                                                  |                                                  |                1 |              2 |
+|  clk_200hz/CLK200hz                         |                                                                  |                                                  |                1 |              4 |
+|  sampling_clk                               |                                                                  |                                                  |                3 |              6 |
+|  clk_200hz/CLK200hz                         | wave_visualiser/btnLtoggle[3]_i_1_n_0                            | wave_visualiser/sampling_rate11_out              |                2 |              8 |
+|  clk_200hz/CLK200hz                         | wave_visualiser/btnRtoggle[3]_i_2_n_0                            | wave_visualiser/btnRtoggle[3]_i_1_n_0            |                1 |              8 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[8][1][5]_i_1_n_0   |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[97][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[90][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[91][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[96][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[92][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[92][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[98][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[99][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[91][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[96][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[99][1][5]_i_1_n_0  |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[9][0][5]_i_1_n_0   |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[93][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[94][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[9][1][5]_i_1_n_0   |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[95][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[8][0][5]_i_1_n_0   |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[166][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[158][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[156][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[159][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[162][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[155][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[163][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[154][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[161][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[157][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[159][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[158][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[164][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[164][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[165][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[160][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[153][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[155][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[165][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[15][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[160][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[161][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[156][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[162][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[157][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[163][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[154][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[153][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[15][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[0][0][5]_i_1_n_0   |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[0][1][5]_i_1_n_0   |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[100][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[100][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[90][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[102][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[10][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[10][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[106][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[110][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[112][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[104][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[107][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[109][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[109][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[110][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[105][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[111][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[101][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[108][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[107][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[102][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[103][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[108][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[104][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[111][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[112][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[105][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[106][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[101][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[113][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[103][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[124][0][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[113][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[124][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[119][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[116][0][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[118][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[120][1][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[125][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[125][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[126][0][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[121][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[114][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[122][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[122][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[117][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[116][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[123][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[115][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[115][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[117][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[119][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[11][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[11][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[121][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[123][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[118][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[120][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[114][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[127][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[132][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[134][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[130][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[133][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[12][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[126][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[130][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[133][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[127][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[129][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[134][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[131][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[135][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[136][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[135][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[137][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[138][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[136][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[128][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[132][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[137][0][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[12][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[129][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[131][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[128][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[147][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[140][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[141][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[148][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[145][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[139][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[141][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[13][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[142][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[143][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[146][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[142][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[147][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[148][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[149][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[13][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[140][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[144][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[144][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[145][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[138][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[143][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[139][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[146][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[150][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[14][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[14][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[151][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[151][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[150][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[149][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[152][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[152][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[167][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[168][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[169][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[169][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[170][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[171][1][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[174][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[16][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[174][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[172][1][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[175][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[172][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[173][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[167][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[175][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[16][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[176][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[177][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[178][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[170][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[178][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[179][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[173][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[168][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[171][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[176][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[177][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[166][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[17][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[190][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[189][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[190][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[191][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[181][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[191][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[185][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[189][0][5]_i_1_n_0 |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[179][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[182][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[183][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[186][0][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[185][0][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[180][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[183][0][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[180][1][5]_i_1_n_0 |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[17][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[184][0][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[187][1][5]_i_1_n_0 |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[188][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[18][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[18][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[181][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[182][1][5]_i_1_n_0 |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[187][0][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[188][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[186][1][5]_i_1_n_0 |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[184][1][5]_i_1_n_0 |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[23][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[25][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[23][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[19][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[21][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[22][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[27][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[27][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[26][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[28][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[22][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[28][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[20][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[29][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[29][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[19][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[24][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[25][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[1][0][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[26][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[1][1][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[20][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[21][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[24][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[30][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[31][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[35][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[34][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[38][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[32][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[33][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[36][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[34][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[40][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[32][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[31][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[38][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[37][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[39][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[2][0][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[33][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[36][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[39][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[2][1][5]_i_1_n_0   |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[35][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[3][0][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[3][1][5]_i_1_n_0   |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[40][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[30][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[37][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[50][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[51][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[52][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[50][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[42][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[44][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[41][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[49][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[41][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[49][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[45][0][5]_i_1_n_0  |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[43][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[42][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[51][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[44][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[52][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[47][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[46][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[4][0][5]_i_1_n_0   |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[48][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[43][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[46][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[45][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[48][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[47][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[4][1][5]_i_1_n_0   |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[54][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[62][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[63][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[64][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[55][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[5][0][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[64][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[53][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[63][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[57][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[5][1][5]_i_1_n_0   |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[53][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[57][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[58][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[60][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[60][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[61][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[55][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[58][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[54][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[56][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[59][1][5]_i_1_n_0  |                                                  |                6 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[56][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[59][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[61][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[62][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[71][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[74][1][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[6][1][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[6][0][5]_i_1_n_0   |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[75][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[66][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[68][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[69][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[70][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[72][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[72][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[74][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[75][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[76][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[67][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[67][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[68][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[66][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[73][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[73][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[65][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[69][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[71][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[65][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[70][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[85][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[85][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[86][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[78][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[86][1][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[78][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[87][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[83][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[87][1][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[88][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[76][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[77][1][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[84][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[88][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[79][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[80][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[89][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[89][1][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[79][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[7][0][5]_i_1_n_0   |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[82][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[81][1][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[83][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[80][0][5]_i_1_n_0  |                                                  |                5 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[81][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[77][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[82][0][5]_i_1_n_0  |                                                  |                2 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[7][1][5]_i_1_n_0   |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[84][0][5]_i_1_n_0  |                                                  |                3 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[95][1][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[98][0][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[94][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[97][1][5]_i_1_n_0  |                                                  |                4 |             12 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/sample_array[93][0][5]_i_1_n_0  |                                                  |                1 |             12 |
+|  clk_1khz/CLK1khz                           |                                                                  |                                                  |                2 |             16 |
+| ~audio_Cap/J_MIC3_Pin4_OBUF                 |                                                                  |                                                  |                4 |             24 |
+|  clk_40khz/CLK                              |                                                                  |                                                  |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | clk_40khz/CLK                                    |                3 |             24 |
+|  clk_6250khz/PRESCALER_CLOCK                |                                                                  | clk_6250khz/COUNTER_reg[0]_i_1__1_n_7            |                4 |             32 |
+|  clk_1khz/PRESCALER_CLOCK                   |                                                                  | clk_1khz/COUNTER_reg[0]_i_1__0_n_7               |                4 |             32 |
+|  clk_200hz/PRESCALER_CLOCK                  |                                                                  | clk_200hz/COUNTER_reg[0]_i_1_n_7                 |                4 |             32 |
+|  clk_40khz/PRESCALER_CLOCK                  |                                                                  | clk_40khz/COUNTER_reg[0]_i_1__2_n_4              |                4 |             32 |
+|  wave_visualiser/clk_sample/PRESCALER_CLOCK |                                                                  | wave_visualiser/clk_sample/COUNTER2_carry__1_n_7 |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | clk_6250khz/clear                                |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | clk_1khz/clear                                   |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | clk_200hz/clear                                  |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | clk_40khz/clear                                  |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG                        |                                                                  | wave_visualiser/clk_sample/clear                 |                4 |             32 |
+| ~CLK6250khz_BUFG                            |                                                                  | oled/frame_counter[16]_i_1_n_0                   |                5 |             34 |
+| ~CLK6250khz_BUFG                            | oled/delay[0]_i_1_n_0                                            |                                                  |                5 |             40 |
+| ~CLK6250khz_BUFG                            | oled/state                                                       |                                                  |                8 |             64 |
+|  sampling_clk                               | wave_visualiser/waveform_trigger/crossing_point                  |                                                  |                9 |             86 |
+| ~CLK6250khz_BUFG                            |                                                                  | oled/spi_word[39]_i_1_n_0                        |               17 |             90 |
++---------------------------------------------+------------------------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

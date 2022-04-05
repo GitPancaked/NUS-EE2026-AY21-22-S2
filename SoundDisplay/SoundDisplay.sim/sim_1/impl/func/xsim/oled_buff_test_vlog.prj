@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"oled_buff_test_func_impl.v" \
+"../../../../../SoundDisplay.srcs/sources_1/new/menu_drawer.v" \
+"../../../../../SoundDisplay.srcs/sources_1/new/text_drawer.v" \
+"../../../../../SoundDisplay.srcs/sim_1/new/oled_buff_test.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.sim/sim_1/impl/func/xsim/oled_buff_test_func_impl.v,1648705250,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_drawer.v,,Audio_Capture;Oled_Display;Top_Student;clock_16bit;clock_16bit_0;clock_20khz;glbl;seg_driver,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,1648697282,verilog,,,,oled_buff_test,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_drawer.v,1648705098,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/text_drawer.v,,menu_drawer,,,,,,,,
+C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sources_1/new/text_drawer.v,1648699050,verilog,,C:/Users/wx/Desktop/SoundDisplay/SoundDisplay.srcs/sim_1/new/oled_buff_test.v,,text_drawer,,,,,,,,
